@@ -1,0 +1,63 @@
+body {
+    font-family: 'Georgia', serif; /* Fonte mais romântica */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(Untitled-1.jpg.png); /* Adicione sua imagem de fundo */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+h1 {
+    color: #ff4d4d; /* Título em vermelho suave */
+}
+
+#contador {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #ff1a1a; /* Cor do contador */
+}
+
+.mensagem {
+    font-size: 1.2em;
+    color: #cc0066; /* Mensagem em um tom de rosa */
+    margin-top: 20px;
+}
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+    #contador {
+        font-size: 1.5em; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .mensagem {
+        font-size: 1em; /* Ajusta o tamanho da mensagem */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contador {
+        font-size: 1.2em; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ajusta o tamanho do título */
+    }
+
+    .mensagem {
+        font-size: 0.9em; /* Ajusta o tamanho da mensagem */
+    }
+}
